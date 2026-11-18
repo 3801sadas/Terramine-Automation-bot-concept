@@ -1,0 +1,152 @@
+# Version Log - Terramine Gold Rush Automator
+# All changes from 2026-11-16 onwards recorded here
+
+## 2026-11-16
+### 4x4 Grid Support (Fixes P001)
+- **New module `src/tilegrid.py`**: 
+  - `detect_geometry()` finds N×N grid from tile seams (luminance 20th percentile dips)
+  - `road_sides()` reads 4 edge openings from gold-road mask with cell-size-scaled thresholds
+  - `tap_centre()` computes tap points from drawn geometry
+  - `cell_rect()` helper
+- **Updated `src/perception_v2.py`**:
+  - Auto-detects grid size via `tilegrid.detect_geometry()`
+  - 6×6 uses exemplar NCC classifier (preserves accuracy)
+  - 4×4, 5×5, etc. use `road_sides()` arm reader
+  - LEP/POT detection generalized for any N
+- **Updated `src/solve_simple.py`**:
+  - Infers grid size from grid keys
+  - Bounds checks use `0 <= r,c < N`
+  - Tap centres from `res["geom"]`
+- **Updated `src/solve_from_image.py`**:
+  - Delegates to `solve_simple.solve_and_validate()`
+  - Uses `res["geom"]` for tap centres
+
+### Validation
+- 4×4 `board_new_01.png`: 10 taps, path validated
+- 6×6 `fresh_01.png`: 12 taps ✓
+- 6×6 `fresh_02.png`: 10 taps ✓
+- 6×6 `fresh_04/05/06/07.png`: all solved
+- 10 archived supervised boards: all solved
+- All `src/test_runtime.py` tests pass (9 groups)
+- P001 marked FIXED in `PROBLEMS.md`
+
+### Endless Run Started
+- Supervisor: `src/endless.py` → log `Memory/derived/endless_20261116_150749_001.log`
+- Boards completed: 2/2 wins (both 4×4, 20 and 16 taps)
+- Rewarded ad chain handled: 3 videos + 3 Play-Store end cards closed correctly
+- Running in background (PIDs 17556, 18632)
+
+---
+
+## 2026-11-16 — later changes (appended)
+
+### P005 fix — real 4×4 boards were mis-read as 6×6
+- **Files:** `src/tilegrid.py`, `src/ad_close_loop.py`, `src/solve_from_image.py`
+- **Why:** `_fit_grid()` required seams to span nearly the whole board, but a 4×4 has only 3
+  *internal* seam lines, so the fit always failed and `detect_geometry()` silently returned the 6×6
+  default → garbage grid → `NO SOLUTION`.
+- **Change:** internal-span rule `(n-2.2)*cell`; accept a single clean gap when ≥3 candidate seams
+  exist; mirror one good axis as `seams_x`/`seams_y`; `looks_like_real_board()` accepts those
+  sources; the solver retries N ∈ {4,5,6} on the fixed frame when geometry is `default`.
+- **Verified:** the wasted board `queue/20261116_152053_no_solution.png` solves at cost 2; 4×4 +
+  6×6 regression all solve; tests pass.
+
+### `run_loop.py --wait <minutes>`
+- **Files:** `src/run_loop.py`
+- **Why:** on TIME_UP the loop exited, so the operator had to restart it by hand. `--wait` polls the
+  screenshot with **zero taps** until a real board appears (still does nothing at all on time-up).
+- **Verified:** run 004 parked on the Time's Up panel and picked up the next board.
+
+### P006 fix — greyed `Loading ad...` panel accepted as a board
+- **Files:** `src/ad_close_loop.py`, `src/run_loop.py`
+- **Why:** `looks_like_result()` keyed on the *yellow* CTA, so the disabled grey `Loading ad...`
+  variant of the Time's Up panel was missed and a dead board was played.
+- **Change:** `looks_like_result()` is now colour-agnostic (wide solid bright band ≥30 rows on the
+  game's dark background); `wait_for_board()` also requires a *running clock* (two frames 2.2 s
+  apart must differ in the HUD timer).
+- **Verified:** loading-ad frame → True; `ad_puzzle_01.png` (Play-Store end card) → False; live
+  4×4/6×6 → False; tests pass.
+
+### P007 fix — board behind a rewarded ad could expire unseen (+ false win)
+- **Files:** `src/ad_close_loop.py`, `src/run_loop.py`
+- **Why:** the reward deals the next board while the end card is still up; the ~80 s creative plus
+  slow ad polls let that board's 60 s clock run out. Run 006 captured it with 3 s left, spent 19
+  taps, got TIME_UP and mis-logged it as a win.
+- **Change:** `clock_is_critical()` red-timer guard (never tap a red-clock board, log `expired`);
+  post-tap win confirmed via the UI tree (TIME_UP = timeout, not a win); no residual self-repair on
+  a red board; `wait_for_board()` rejects red-clock boards.
+- **Verified:** guard matrix (58 s False / 3 s True / 0 s True / 43 s win False); tests pass.
+
+### P007 follow-up — close the ad the moment the reward is paid (screenshot-only)
+- **Files:** `src/ad_reward.py` (new), `src/ad_close_loop.py`, `src/test_runtime.py`,
+  `Memory/derived/ad_close/templates/*.png` (new)
+- **Why:** the fixed `reward_wait=75 s` was the real cost. Run 007's ad reached its end card at 8 s
+  and we closed at 72 s — 64 s of the new board's 60 s clock spent on an end card.
+- **Change:** the AdMob badge switches from `Reward in N second(s)` to `Reward granted` when the
+  reward is paid. `ad_reward.reward_state()` matches that string on an **edge map** (colour- and
+  polarity-invariant, no OCR, no `uiautomator dump`, 0.03 s warm). `close_ad()` checks it right after
+  each screenshot, before the dump, and closes as soon as it is true (≥4 s in); the old timing path
+  stays as a fallback for creatives with no badge. `poll_s` 2.5 → 1.2 s, post-tap settle 3 → 1.2 s.
+- **Verified:** over 277 archived ad frames — granted 0.977-1.000, `Reward in 1 second` 0.406-0.408,
+  no-badge ads 0.085-0.255, boards ≈ -0.02. New `test_reward_granted_fast_close` closes at 5 s with
+  `reward_wait=75`; `test_reward_wait` still proves a countdown badge is never tapped early.
+
+### P008 fix — close early by rule change (operator decision)
+- **Files:** `src/ad_close_loop.py`, `src/test_runtime.py`
+- **Why:** the P008 creative (Play-Store style end card) has **no** `Reward granted` badge, so the
+  badge detector never fires and the 75 s fallback cost another board. Operator ruling: the reward is
+  to be treated as already confirmed, so close earlier.
+- **Change:** `close_ad(early_close_s=18.0)` closes at 18 s with no confirmation; badge-granted
+  (>= 4 s) and frozen-end-card paths still close sooner; `reward_wait` is now only a safety cap.
+  Badge score logged every poll.
+- **Verified:** `test_early_close_no_badge` closes the Twin Tales end card at 17 s; all tests pass.
+
+### P009 fix - never tap ad content; BACK instead of blind coordinates
+- **Files:** `src/ad_close_loop.py`, `src/test_runtime.py`
+- **Why:** at the 18 s close deadline the K Cash creative had **no close widget at all** (UI trees
+  prove it: `content-desc="Close"` appears only in poll 13 of the run). `_pick()` fell back to
+  remembered `known_point` coordinates and tapped (975,584) inside the video and (1007,152) on the
+  AdChoices info icon - neither closes anything, and (1007,152) sits next to `Install`.
+- **Change:** `_pick()` now returns only a *visually confirmed* glyph (template/Hough, score >= 0.70,
+  corner region); remembered priors are never tapped. When the deadline is due and no confirmed X
+  exists, the loop sends `KEYCODE_BACK` (max 3) instead of guessing at ad content.
+- **Verified:** `test_back_when_no_close_widget` - prior-only candidate -> zero taps, BACK at 17 s;
+  all tests pass.
+
+### P010 - a transient screenshot killed the loop on a live board
+- **Files:** `src/device.py`, `src/run_loop.py`
+- **Why:** `device.screenshot()` raised `ValueError("black frame")` on a blank `screencap` and the
+  exception killed the whole process while a 40 s board was sitting there.
+- **Change:** `screenshot()` retries 4x with growing backoff and only raises last; every call site in
+  `run_loop.py` goes through `_shot_or_recover()` (display recovery + retry).
+- **Verified:** syntax ok; all tests pass.
+
+### P011 - the multi-ad interstitial chain has no early exit (no code change)
+- **Files:** none (diagnostic only)
+- **Why:** run 013's `Watch Ad` started a 3-creative chain (K Cash -> Shacom -> Blade War) that only
+  yielded at poll 13 (~65 s). BACK did nothing (navigated inside the WebView); the X exists only on
+  the final creative. The board behind such an ad is dead regardless of close speed.
+- **Contrast:** the AdMob-style `Reward granted` ad closed cleanly (detector 1.00, poll 7, board
+  returned with 38 s). The badge path works when the ad has a badge.
+- **Status:** recorded; the no-blind-tap guard stands. BACK-on-Play-Store-sheet hypothesis untested.[2026-11-17 18:42] P013: mistake taps ate the move budget; Out-of-moves overlay read as BOARD
+files: src/screen_state.py, src/run_loop.py, src/test_runtime.py, Memory/derived/PROBLEMS.md
+why: PROBLEMS P013. A plan with base=12 + 8 mistake taps = 20 with exactly 20 moves left
+     burned the last move, so the final fix never landed and the board died. The dead board
+     behind the "Out of moves!" overlay still shows Tap-road-tiles/Level/XP/N-left, so the
+     board rules matched first and the loop tapped a fresh 9-tap plan on zero moves.
+  - classify(): Out-of-moves moved to 0c, before the board rules.
+  - run_loop: moves_left is read before solving; plan.total >= moves_left re-solves with
+     --no-mistakes, and if there is still no headroom it taps nothing and waits.
+  - test: OUT_OF_MOVES_XML regression case (board markers + overlay -> OUT_OF_MOVES).
+verified: python src/test_runtime.py -> ALL TESTS PASSED (incl. new OUT_OF_MOVES case)
+[2026-11-18 20:52] P014: board captured with ~20 s left died to one dropped tap
+files: src/ad_close_loop.py, src/run_loop.py, src/test_runtime.py, Memory/derived/PROBLEMS.md
+why: PROBLEMS P014. Board 61 (Level 24 5x5) arrived with ~20 s left, the loop spent
+     ~3.5 s on the suspicious-plan re-capture and 8 taps on intentional mistakes,
+     then a single dropped rotation needed a 4 s residual repair it could not afford.
+  - ad_close_loop.low_clock(): amber HUD timer detector (orange >= .06 and > 2*green).
+    Measured 15 s -> orange .104 / green .005; 37-80 s -> orange .028-.030 / green .09-.11.
+  - run_loop: low clock -> solve with --no-mistakes, skip the re-capture branch.
+  - residual repair skip reasons are now logged (no-solution / n>8 / clock critical).
+  - test_low_clock added.
+verified: python src/test_runtime.py -> ALL TESTS PASSED
