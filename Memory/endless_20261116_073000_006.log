@@ -1,0 +1,38 @@
+run_loop start 2026-11-16T16:40:34 max_boards=50 dry_run=False
+[1] state=RESULT_AD (3.5s)
+  tap Watch Ad (RESULT_AD)
+  [ad] poll 1: state=AD_WEBVIEW
+  [ad] rewarded creative playing -> waiting (3s/75s)
+  [ad] poll 2: state=AD_WEBVIEW
+  [ad] rewarded creative playing -> waiting (9s/75s)
+  [ad] poll 3: state=AD_WEBVIEW
+  [ad] rewarded creative playing -> waiting (14s/75s)
+  [ad] poll 4: state=AD_WEBVIEW
+  [ad] rewarded creative playing -> waiting (20s/75s)
+  [ad] poll 5: state=AD_WEBVIEW
+  [ad] rewarded creative playing -> waiting (25s/75s)
+  [ad] poll 6: state=AD_STORE
+  [ad] Play Store sheet -> tap Close
+  [ad] poll 7: state=AD_WEBVIEW
+  [ad] rewarded creative playing -> waiting (36s/75s)
+  [ad] poll 8: state=AD_WEBVIEW
+  [ad] rewarded creative playing -> waiting (41s/75s)
+  [ad] poll 9: state=AD_STORE
+  [ad] Play Store sheet -> tap Close
+  [ad] poll 10: state=AD_WEBVIEW
+  [ad] rewarded creative playing -> waiting (53s/75s)
+  [ad] poll 11: state=AD_WEBVIEW
+  [ad] rewarded creative playing -> waiting (60s/75s)
+  [ad] poll 12: state=AD_WEBVIEW
+  [ad] rewarded creative playing -> waiting (65s/75s)
+  [ad] poll 13: state=AD_WEBVIEW
+  [ad] rewarded creative playing -> waiting (71s/75s)
+  [ad] poll 14: state=AD_WEBVIEW
+  [ad] tap close (72,153) score=0.83 region=top_left method=template
+  [ad] board visible at poll 15 -> closed
+[2] state=BOARD (visual) (1.4s)
+  plan: lep=[0, 0] pot=[1, 3] base=11 total=19
+  -> win (boards=1 wins=1)
+[3] state=TIME_UP (3.4s)
+  Time's Up -> doing nothing (hard user rule)
+  waiting up to 1800s for a new board (zero taps)

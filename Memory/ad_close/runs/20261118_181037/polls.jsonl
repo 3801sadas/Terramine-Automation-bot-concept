@@ -1,0 +1,5 @@
+{"poll": 1, "t": 1.1, "badge": 0.03, "static": 0}
+{"poll": 2, "t": 5.7, "badge": -0.054, "static": 0}
+{"poll": 3, "t": 10.4, "badge": -0.054, "static": 1}
+{"poll": 4, "t": 15.1, "badge": -0.054, "static": 2}
+{"poll": 5, "t": 19.8, "badge": -0.054, "static": 3}

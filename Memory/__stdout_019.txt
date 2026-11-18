@@ -1,0 +1,224 @@
+run_loop start 2026-11-16T22:17:05 max_boards=50 dry_run=False
+  screen dim/locked -> recovering display
+[1] state=TIME_UP (10.3s)
+  Time's Up -> doing nothing (hard user rule)
+  waiting up to 7200s for a new board (zero taps)
+  new board appeared -> playing it
+  plan: lep=[3, 0] pot=[0, 3] base=9 total=17
+  -> win (boards=1 wins=1)
+[2] state=RESULT_FREE (3.4s)
+  tap Play Again
+[3] state=BOARD (visual) (1.2s)
+  plan: lep=[1, 0] pot=[3, 3] base=16 total=24
+  -> win (boards=2 wins=2)
+[4] state=RESULT_AD (3.4s)
+  tap Watch Ad (RESULT_AD)
+  [ad] poll 1: state=AD_WEBVIEW
+  [ad] creative playing -> waiting (3s, close at 18s, badge 0.09)
+  [ad] poll 2: state=AD_WEBVIEW
+  [ad] creative playing -> waiting (7s, close at 18s, badge 0.09)
+  [ad] poll 3: state=AD_WEBVIEW
+  [ad] creative playing -> waiting (11s, close at 18s, badge 0.09)
+  [ad] poll 4: state=AD_STORE
+  [ad] Play Store sheet -> BACK (accelerates the exit)
+  [ad] poll 5: state=AD_WEBVIEW
+  [ad] no confirmed close widget -> BACK (2/3)
+  [ad] poll 6: state=AD_WEBVIEW
+  [ad] no confirmed close widget -> BACK (3/3)
+  [ad] poll 7: state=AD_WEBVIEW
+  [ad] poll 8: state=AD_WEBVIEW
+  [ad] poll 9: state=AD_WEBVIEW
+  [ad] poll 10: state=AD_WEBVIEW
+  [ad] poll 11: state=AD_STORE
+  [ad] Play Store sheet -> tap Close
+  [ad] poll 12: state=AD_WEBVIEW
+  [ad] poll 13: state=AD_WEBVIEW
+  [ad] poll 14: state=AD_STORE
+  [ad] Play Store sheet -> tap Close
+  [ad] board visible at poll 15 -> closed
+[5] state=BOARD (visual) (1.2s)
+  board clock already critical (red timer) -> not tapping
+  waiting up to 7200s for a fresh board
+  fresh board appeared -> playing it
+  plan: lep=[2, 0] pot=[2, 3] base=2 total=10
+  -> win (boards=3 wins=3)
+[6] state=RESULT_FREE (3.4s)
+  tap Play Again
+[7] state=BOARD (visual) (1.2s)
+  plan: lep=[2, 0] pot=[0, 3] base=17 total=25
+  repair frames -> 20261116_222510_repair_after.png
+  residual repair: 1 taps
+  -> win (boards=4 wins=4)
+[8] state=LEVEL_UP (4.0s)
+  tap Watch Ad (LEVEL_UP)
+  [ad] poll 1: state=AD_WEBVIEW
+  [ad] creative playing -> waiting (3s, close at 18s, badge 0.07)
+  [ad] poll 2: state=AD_STORE
+  [ad] Play Store sheet -> BACK (accelerates the exit)
+  [ad] poll 3: state=AD_WEBVIEW
+  [ad] creative playing -> waiting (14s, close at 18s, badge 0.07)
+  [ad] poll 4: state=AD_WEBVIEW
+  [ad] no confirmed close widget -> BACK (2/3)
+  [ad] poll 5: state=AD_WEBVIEW
+  [ad] no confirmed close widget -> BACK (3/3)
+  [ad] poll 6: state=AD_WEBVIEW
+  [ad] poll 7: state=AD_WEBVIEW
+  [ad] poll 8: state=AD_WEBVIEW
+  [ad] poll 9: state=AD_STORE
+  [ad] Play Store sheet -> tap Close
+  [ad] board visible at poll 10 -> closed
+[9] state=BOARD (visual) (1.3s)
+  plan: lep=[0, 0] pot=[0, 3] base=2 total=10
+  -> win (boards=5 wins=5)
+[10] state=RESULT_FREE (3.3s)
+  tap Play Again
+[11] state=BOARD (visual) (1.2s)
+  plan: lep=[1, 0] pot=[0, 3] base=9 total=17
+  repair frames -> 20261116_222723_repair_after.png
+  residual repair: 1 taps
+  -> win (boards=6 wins=6)
+[12] state=RESULT_FREE (4.0s)
+  tap Play Again
+[13] state=BOARD (visual) (1.2s)
+  plan: lep=[1, 0] pot=[0, 3] base=13 total=21
+  repair frames -> 20261116_222743_repair_after.png
+  residual repair: 1 taps
+  -> win (boards=7 wins=7)
+[14] state=RESULT_AD (4.0s)
+  tap Watch Ad (RESULT_AD)
+  [ad] poll 1: state=AD_WEBVIEW
+  [ad] creative playing -> waiting (3s, close at 18s, badge 0.07)
+  [ad] poll 2: state=AD_WEBVIEW
+  [ad] creative playing -> waiting (7s, close at 18s, badge 0.07)
+  [ad] poll 3: state=AD_STORE
+  [ad] Play Store sheet -> BACK (accelerates the exit)
+  [ad] poll 4: state=AD_WEBVIEW
+  [ad] creative playing -> waiting (17s, close at 18s, badge 0.07)
+  [ad] poll 5: state=AD_WEBVIEW
+  [ad] no confirmed close widget -> BACK (2/3)
+  [ad] poll 6: state=AD_WEBVIEW
+  [ad] no confirmed close widget -> BACK (3/3)
+  [ad] poll 7: state=AD_WEBVIEW
+  [ad] poll 8: state=AD_WEBVIEW
+  [ad] poll 9: state=AD_WEBVIEW
+  [ad] poll 10: state=AD_STORE
+  [ad] Play Store sheet -> tap Close
+  [ad] poll 11: state=AD_WEBVIEW
+  [ad] poll 12: state=AD_WEBVIEW
+  [ad] poll 13: state=AD_WEBVIEW
+  [ad] poll 14: state=AD_STORE
+  [ad] Play Store sheet -> tap Close
+  [ad] board visible at poll 15 -> closed
+[15] state=BOARD (visual) (1.2s)
+  plan: lep=[0, 0] pot=[0, 3] base=2 total=10
+  -> win (boards=8 wins=8)
+[16] state=RESULT_FREE (3.4s)
+  tap Play Again
+[17] state=BOARD (visual) (1.2s)
+  plan: lep=[3, 0] pot=[2, 3] base=7 total=15
+  -> win (boards=9 wins=9)
+[18] state=RESULT_FREE (3.5s)
+  tap Play Again
+[19] state=BOARD (visual) (1.2s)
+  plan: lep=[2, 0] pot=[3, 3] base=10 total=18
+  -> win (boards=10 wins=10)
+[20] state=RESULT_AD (3.4s)
+  tap Watch Ad (RESULT_AD)
+  [ad] poll 1: state=AD_WEBVIEW
+  [ad] creative playing -> waiting (3s, close at 18s, badge 0.07)
+  [ad] poll 2: state=AD_WEBVIEW
+  [ad] creative playing -> waiting (7s, close at 18s, badge 0.06)
+  [ad] poll 3: state=AD_STORE
+  [ad] Play Store sheet -> BACK (accelerates the exit)
+  [ad] poll 4: state=AD_WEBVIEW
+  [ad] creative playing -> waiting (16s, close at 18s, badge 0.07)
+  [ad] poll 5: state=AD_WEBVIEW
+  [ad] no confirmed close widget -> BACK (2/3)
+  [ad] poll 6: state=AD_WEBVIEW
+  [ad] no confirmed close widget -> BACK (3/3)
+  [ad] poll 7: state=AD_WEBVIEW
+  [ad] poll 8: state=AD_WEBVIEW
+  [ad] poll 9: state=AD_WEBVIEW
+  [ad] poll 10: state=AD_STORE
+  [ad] Play Store sheet -> tap Close
+  [ad] poll 11: state=AD_WEBVIEW
+  [ad] poll 12: state=AD_WEBVIEW
+  [ad] poll 13: state=AD_WEBVIEW
+  [ad] poll 14: state=AD_STORE
+  [ad] Play Store sheet -> tap Close
+  [ad] board visible at poll 15 -> closed
+[21] state=BOARD (visual) (1.4s)
+  plan: lep=[0, 0] pot=[1, 3] base=11 total=19
+  -> win (boards=11 wins=11)
+[22] state=RESULT_FREE (3.6s)
+  tap Play Again
+[23] state=BOARD (visual) (1.4s)
+  plan: lep=[1, 0] pot=[2, 3] base=11 total=19
+  -> win (boards=12 wins=12)
+[24] state=RESULT_FREE (3.7s)
+  tap Play Again
+[25] state=BOARD (visual) (1.4s)
+  plan: lep=[1, 0] pot=[1, 3] base=2 total=10
+  -> win (boards=13 wins=13)
+[26] state=RESULT_AD (3.5s)
+  tap Watch Ad (RESULT_AD)
+  [ad] poll 1: state=AD_WEBVIEW
+  [ad] creative playing -> waiting (3s, close at 18s, badge 0.30)
+  [ad] reward granted (badge 1.00) -> close now at (987,574)
+  [ad] reward granted (badge 1.00) -> close now at (987,574)
+  [ad] reward granted (badge 1.00) -> close now at (141,151)
+  [ad] reward granted (badge 1.00) -> close now at (141,151)
+  [ad] reward granted (badge 1.00) -> close now at (1008,153)
+  [ad] board visible at poll 7 -> closed
+[27] state=BOARD (visual) (1.4s)
+  plan: lep=[0, 0] pot=[1, 3] base=10 total=18
+  -> win (boards=14 wins=14)
+[28] state=LEVEL_UP (3.5s)
+  tap Watch Ad (LEVEL_UP)
+  [ad] poll 1: state=AD_WEBVIEW
+  [ad] creative playing -> waiting (3s, close at 18s, badge 0.30)
+  [ad] reward granted (badge 1.00) -> close now at (987,574)
+  [ad] reward granted (badge 1.00) -> close now at (987,574)
+  [ad] reward granted (badge 1.00) -> close now at (141,151)
+  [ad] reward granted (badge 1.00) -> close now at (141,151)
+  [ad] reward granted (badge 1.00) -> close now at (1008,153)
+  [ad] board visible at poll 7 -> closed
+[29] state=BOARD (visual) (1.4s)
+  plan: lep=[2, 0] pot=[3, 3] base=10 total=18
+  -> win (boards=15 wins=15)
+[30] state=RESULT_FREE (3.7s)
+  tap Play Again
+[31] state=BOARD (visual) (1.3s)
+  plan: lep=[0, 0] pot=[2, 3] base=9 total=17
+  repair frames -> 20261116_223629_repair_after.png
+  residual repair: 1 taps
+  -> win (boards=16 wins=16)
+[32] state=RESULT_FREE (3.6s)
+  tap Play Again
+[33] state=BOARD (visual) (1.2s)
+  plan: lep=[1, 0] pot=[2, 3] base=10 total=18
+  -> win (boards=17 wins=17)
+[34] state=RESULT_AD (3.8s)
+  tap Watch Ad (RESULT_AD)
+  [ad] poll 1: state=AD_WEBVIEW
+  [ad] creative playing -> waiting (3s, close at 18s, badge 0.30)
+  [ad] reward granted (badge 1.00) -> close now at (141,151)
+  [ad] reward granted (badge 1.00) -> close now at (141,151)
+  [ad] reward granted (badge 1.00) -> close now at (987,574)
+  [ad] reward granted (badge 1.00) -> close now at (987,574)
+  [ad] reward granted (badge 1.00) -> close now at (1008,153)
+  [ad] board visible at poll 7 -> closed
+[35] state=BOARD (visual) (1.3s)
+  plan: lep=[3, 0] pot=[3, 3] base=2 total=10
+  -> win (boards=18 wins=18)
+[36] state=RESULT_FREE (3.2s)
+  tap Play Again
+[37] state=BOARD (visual) (1.2s)
+  plan: lep=[0, 0] pot=[3, 3] base=16 total=24
+  -> unknown (boards=19 wins=18)
+[38] state=BOARD (visual) (1.2s)
+  plan: lep=[0, 0] pot=[3, 3] base=0 total=8
+  -> unknown (boards=20 wins=18)
+[39] state=BOARD (visual) (1.2s)
+  board clock already critical (red timer) -> not tapping
+  waiting up to 7200s for a fresh board

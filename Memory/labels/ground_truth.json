@@ -1,0 +1,633 @@
+{
+  "_comment": "Gold Rush ground-truth labels. Keys are image paths (absolute). Each board: lep/pot [r,c], cells {r,c: {kind, sides}} where sides is an open-side string in NESW order subset, '' = grass.",
+  "boards": [
+    {
+      "image": "C:\\Users\\Usernom\\Documents\\Terramine\\Memory\\derived\\device\\run_01.png",
+      "lep": [
+        1,
+        0
+      ],
+      "pot": [
+        2,
+        5
+      ],
+      "cells": {
+        "0,0": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "0,1": {
+          "kind": "curv",
+          "sides": "NW"
+        },
+        "0,2": {
+          "kind": "curv",
+          "sides": "EN"
+        },
+        "0,3": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "0,4": {
+          "kind": "dead",
+          "sides": "S"
+        },
+        "0,5": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "1,0": {
+          "kind": "LEP",
+          "sides": "E"
+        },
+        "1,1": {
+          "kind": "curv",
+          "sides": "SW"
+        },
+        "1,2": {
+          "kind": "curv",
+          "sides": "NW"
+        },
+        "1,3": {
+          "kind": "str",
+          "sides": "NS"
+        },
+        "1,4": {
+          "kind": "curv",
+          "sides": "EN"
+        },
+        "1,5": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "2,0": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "2,1": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "2,2": {
+          "kind": "curv",
+          "sides": "SW"
+        },
+        "2,3": {
+          "kind": "str",
+          "sides": "NS"
+        },
+        "2,4": {
+          "kind": "curv",
+          "sides": "SW"
+        },
+        "2,5": {
+          "kind": "POT",
+          "sides": "W"
+        },
+        "3,0": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "3,1": {
+          "kind": "str",
+          "sides": "EW"
+        },
+        "3,2": {
+          "kind": "curv",
+          "sides": "NW"
+        },
+        "3,3": {
+          "kind": "dead",
+          "sides": "E"
+        },
+        "3,4": {
+          "kind": "str",
+          "sides": "NS"
+        },
+        "3,5": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "4,0": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "4,1": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "4,2": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "4,3": {
+          "kind": "dead",
+          "sides": "W"
+        },
+        "4,4": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "4,5": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "5,0": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "5,1": {
+          "kind": "str",
+          "sides": "EW"
+        },
+        "5,2": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "5,3": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "5,4": {
+          "kind": "curv",
+          "sides": "NW"
+        },
+        "5,5": {
+          "kind": "dead",
+          "sides": "N"
+        }
+      }
+    },
+    {
+      "image": "C:\\Users\\Usernom\\Documents\\Terramine\\Memory\\derived\\device\\fresh_01.png",
+      "lep": [
+        2,
+        0
+      ],
+      "pot": [
+        5,
+        5
+      ],
+      "cells": {
+        "0,0": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "0,1": {
+          "kind": "dead",
+          "sides": "E"
+        },
+        "0,2": {
+          "kind": "curv",
+          "sides": "SW"
+        },
+        "0,3": {
+          "kind": "str",
+          "sides": "NS"
+        },
+        "0,4": {
+          "kind": "curv",
+          "sides": "EN"
+        },
+        "0,5": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "1,0": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "1,1": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "1,2": {
+          "kind": "str",
+          "sides": "EW"
+        },
+        "1,3": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "1,4": {
+          "kind": "str",
+          "sides": "EW"
+        },
+        "1,5": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "2,0": {
+          "kind": "LEP",
+          "sides": "E"
+        },
+        "2,1": {
+          "kind": "str",
+          "sides": "NS"
+        },
+        "2,2": {
+          "kind": "curv",
+          "sides": "ES"
+        },
+        "2,3": {
+          "kind": "curv",
+          "sides": "NW"
+        },
+        "2,4": {
+          "kind": "curv",
+          "sides": "EN"
+        },
+        "2,5": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "3,0": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "3,1": {
+          "kind": "str",
+          "sides": "NS"
+        },
+        "3,2": {
+          "kind": "str",
+          "sides": "EW"
+        },
+        "3,3": {
+          "kind": "curv",
+          "sides": "NW"
+        },
+        "3,4": {
+          "kind": "curv",
+          "sides": "ES"
+        },
+        "3,5": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "4,0": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "4,1": {
+          "kind": "str",
+          "sides": "NS"
+        },
+        "4,2": {
+          "kind": "curv",
+          "sides": "ES"
+        },
+        "4,3": {
+          "kind": "curv",
+          "sides": "NW"
+        },
+        "4,4": {
+          "kind": "curv",
+          "sides": "EN"
+        },
+        "4,5": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "5,0": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "5,1": {
+          "kind": "str",
+          "sides": "EW"
+        },
+        "5,2": {
+          "kind": "str",
+          "sides": "EW"
+        },
+        "5,3": {
+          "kind": "curv",
+          "sides": "SW"
+        },
+        "5,4": {
+          "kind": "str",
+          "sides": "NS"
+        },
+        "5,5": {
+          "kind": "POT",
+          "sides": "N"
+        }
+      }
+    },
+    {
+      "image": "C:\\Users\\Usernom\\Documents\\Terramine\\Memory\\derived\\device\\fresh_tshape_01.png",
+      "lep": [
+        1,
+        0
+      ],
+      "pot": [
+        4,
+        5
+      ],
+      "cells": {
+        "0,0": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "0,1": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "0,2": {
+          "kind": "str",
+          "sides": "EW"
+        },
+        "0,3": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "0,4": {
+          "kind": "curv",
+          "sides": "NW"
+        },
+        "0,5": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "1,0": {
+          "kind": "LEP",
+          "sides": "E"
+        },
+        "1,1": {
+          "kind": "curv",
+          "sides": "NW"
+        },
+        "1,2": {
+          "kind": "dead",
+          "sides": "W"
+        },
+        "1,3": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "1,4": {
+          "kind": "T",
+          "sides": "NEW"
+        },
+        "1,5": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "2,0": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "2,1": {
+          "kind": "str",
+          "sides": "EW"
+        },
+        "2,2": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "2,3": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "2,4": {
+          "kind": "curv",
+          "sides": "NW"
+        },
+        "2,5": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "3,0": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "3,1": {
+          "kind": "str",
+          "sides": "EW"
+        },
+        "3,2": {
+          "kind": "dead",
+          "sides": "N"
+        },
+        "3,3": {
+          "kind": "str",
+          "sides": "NS"
+        },
+        "3,4": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "3,5": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "4,0": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "4,1": {
+          "kind": "curv",
+          "sides": "NW"
+        },
+        "4,2": {
+          "kind": "curv",
+          "sides": "NE"
+        },
+        "4,3": {
+          "kind": "str",
+          "sides": "NS"
+        },
+        "4,4": {
+          "kind": "curv",
+          "sides": "NE"
+        },
+        "4,5": {
+          "kind": "POT",
+          "sides": "W"
+        },
+        "5,0": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "5,1": {
+          "kind": "dead",
+          "sides": "E"
+        },
+        "5,2": {
+          "kind": "curv",
+          "sides": "NW"
+        },
+        "5,3": {
+          "kind": "str",
+          "sides": "NS"
+        },
+        "5,4": {
+          "kind": "curv",
+          "sides": "SW"
+        },
+        "5,5": {
+          "kind": "grass",
+          "sides": ""
+        }
+      }
+    },
+    {
+      "image": "C:\\Users\\Usernom\\Documents\\Terramine\\Memory\\derived\\device\\loop_01.png",
+      "lep": [
+        1,
+        0
+      ],
+      "pot": [
+        0,
+        5
+      ],
+      "cells": {
+        "0,0": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "0,1": {
+          "kind": "str",
+          "sides": "NS"
+        },
+        "0,2": {
+          "kind": "T",
+          "sides": "NES"
+        },
+        "0,3": {
+          "kind": "str",
+          "sides": "NS"
+        },
+        "0,4": {
+          "kind": "curv",
+          "sides": "NE"
+        },
+        "0,5": {
+          "kind": "POT",
+          "sides": "W"
+        },
+        "1,0": {
+          "kind": "LEP",
+          "sides": "E"
+        },
+        "1,1": {
+          "kind": "curv",
+          "sides": "ES"
+        },
+        "1,2": {
+          "kind": "curv",
+          "sides": "SW"
+        },
+        "1,3": {
+          "kind": "curv",
+          "sides": "NE"
+        },
+        "1,4": {
+          "kind": "curv",
+          "sides": "ES"
+        },
+        "1,5": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "2,0": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "2,1": {
+          "kind": "str",
+          "sides": "EW"
+        },
+        "2,2": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "2,3": {
+          "kind": "str",
+          "sides": "EW"
+        },
+        "2,4": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "2,5": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "3,0": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "3,1": {
+          "kind": "str",
+          "sides": "EW"
+        },
+        "3,2": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "3,3": {
+          "kind": "str",
+          "sides": "EW"
+        },
+        "3,4": {
+          "kind": "dead",
+          "sides": "E"
+        },
+        "3,5": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "4,0": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "4,1": {
+          "kind": "curv",
+          "sides": "ES"
+        },
+        "4,2": {
+          "kind": "str",
+          "sides": "NS"
+        },
+        "4,3": {
+          "kind": "curv",
+          "sides": "NE"
+        },
+        "4,4": {
+          "kind": "curv",
+          "sides": "NW"
+        },
+        "4,5": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "5,0": {
+          "kind": "grass",
+          "sides": ""
+        },
+        "5,1": {
+          "kind": "T",
+          "sides": "ESW"
+        },
+        "5,2": {
+          "kind": "str",
+          "sides": "EW"
+        },
+        "5,3": {
+          "kind": "dead",
+          "sides": "E"
+        },
+        "5,4": {
+          "kind": "curv",
+          "sides": "NW"
+        },
+        "5,5": {
+          "kind": "grass",
+          "sides": ""
+        }
+      }
+    }
+  ]
+}

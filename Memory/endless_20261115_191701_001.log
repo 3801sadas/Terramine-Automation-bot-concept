@@ -1,0 +1,467 @@
+run_loop start 2026-11-15T19:17:02 max_boards=500 dry_run=False
+[1] state=RESULT_FREE (3.5s)
+  tap Play Again
+[2] state=BOARD (visual) (1.1s)
+  plan: lep=[4, 0] pot=[1, 5] base=18 total=26
+  -> win (boards=1 wins=1)
+[3] state=RESULT_FREE (3.5s)
+  tap Play Again
+[4] state=BOARD (visual) (1.1s)
+  plan: lep=[4, 0] pot=[4, 5] base=4 total=12
+  -> win (boards=2 wins=2)
+[5] state=RESULT_AD (3.5s)
+  tap Watch Ad (RESULT_AD)
+[6] state=BOARD (visual) (1.1s)
+  plan: lep=[3, 0] pot=[4, 5] base=11 total=19
+  -> win (boards=3 wins=3)
+[7] state=RESULT_FREE (3.6s)
+  tap Play Again
+[8] state=BOARD (visual) (1.1s)
+  plan: lep=[0, 0] pot=[4, 5] base=14 total=22
+  -> win (boards=4 wins=4)
+[9] state=RESULT_FREE (4.0s)
+  tap Play Again
+[10] state=BOARD (visual) (1.1s)
+  plan: lep=[3, 0] pot=[3, 5] base=4 total=12
+  -> win (boards=5 wins=5)
+[11] state=LEVEL_UP (3.2s)
+  tap Watch Ad (LEVEL_UP)
+[12] state=BOARD (visual) (1.2s)
+  plan: lep=[0, 0] pot=[5, 5] base=21 total=29
+  -> win (boards=6 wins=6)
+[13] state=RESULT_FREE (3.5s)
+  tap Play Again
+[14] state=BOARD (visual) (1.2s)
+  plan: lep=[2, 0] pot=[4, 5] base=17 total=25
+  -> win (boards=7 wins=7)
+[15] state=RESULT_FREE (3.6s)
+  tap Play Again
+[16] state=BOARD (visual) (1.2s)
+  plan: lep=[2, 0] pot=[1, 5] base=25 total=33
+  -> win (boards=8 wins=8)
+[17] state=RESULT_AD (3.5s)
+  tap Watch Ad (RESULT_AD)
+[18] state=BOARD (visual) (1.2s)
+  plan: lep=[3, 0] pot=[3, 5] base=4 total=12
+  -> win (boards=9 wins=9)
+[19] state=RESULT_FREE (3.6s)
+  tap Play Again
+[20] state=BOARD (visual) (1.2s)
+  plan: lep=[2, 0] pot=[1, 5] base=15 total=23
+  -> win (boards=10 wins=10)
+[21] state=RESULT_FREE (3.8s)
+  tap Play Again
+[22] state=BOARD (visual) (1.2s)
+  plan: lep=[4, 0] pot=[1, 5] base=18 total=26
+  -> win (boards=11 wins=11)
+[23] state=RESULT_AD (3.5s)
+  tap Watch Ad (RESULT_AD)
+[24] state=BOARD (visual) (1.2s)
+  plan: lep=[4, 0] pot=[4, 5] base=4 total=12
+  -> win (boards=12 wins=12)
+[25] state=RESULT_FREE (3.5s)
+  tap Play Again
+[26] state=BOARD (visual) (1.1s)
+  plan: lep=[5, 0] pot=[4, 5] base=19 total=27
+  -> win (boards=13 wins=13)
+[27] state=RESULT_FREE (3.6s)
+  tap Play Again
+[28] state=BOARD (visual) (1.2s)
+  plan: lep=[3, 0] pot=[3, 5] base=4 total=12
+  -> win (boards=14 wins=14)
+[29] state=LEVEL_UP (3.4s)
+  tap Watch Ad (LEVEL_UP)
+[30] state=BOARD (visual) (1.1s)
+  plan: lep=[1, 0] pot=[1, 5] base=4 total=12
+  -> win (boards=15 wins=15)
+[31] state=RESULT_FREE (3.4s)
+  tap Play Again
+[32] state=BOARD (visual) (1.2s)
+  plan: lep=[4, 0] pot=[0, 5] base=17 total=25
+  -> win (boards=16 wins=16)
+[33] state=RESULT_FREE (3.7s)
+  tap Play Again
+[34] state=BOARD (visual) (1.2s)
+  plan: lep=[3, 0] pot=[5, 5] base=9 total=17
+  -> win (boards=17 wins=17)
+[35] state=RESULT_AD (3.8s)
+  tap Watch Ad (RESULT_AD)
+[36] state=BOARD (visual) (1.2s)
+  plan: lep=[2, 0] pot=[1, 5] base=7 total=15
+  residual repair: 2 taps
+  -> win (boards=18 wins=18)
+[37] state=RESULT_FREE (3.9s)
+  tap Play Again
+[38] state=BOARD (visual) (1.2s)
+  plan: lep=[5, 0] pot=[5, 5] base=4 total=12
+  -> win (boards=19 wins=19)
+[39] state=RESULT_FREE (3.4s)
+  tap Play Again
+[40] state=BOARD (visual) (1.3s)
+  plan: lep=[2, 0] pot=[3, 5] base=14 total=22
+  -> win (boards=20 wins=20)
+[41] state=RESULT_AD (3.7s)
+  tap Watch Ad (RESULT_AD)
+[42] state=BOARD (visual) (1.2s)
+  plan: lep=[1, 0] pot=[4, 5] base=14 total=22
+  -> win (boards=21 wins=21)
+[43] state=RESULT_FREE (3.6s)
+  tap Play Again
+[44] state=BOARD (visual) (1.3s)
+  plan: lep=[0, 0] pot=[5, 5] base=20 total=28
+  -> win (boards=22 wins=22)
+[45] state=RESULT_FREE (3.7s)
+  tap Play Again
+[46] state=BOARD (visual) (1.4s)
+  plan: lep=[3, 0] pot=[5, 5] base=12 total=20
+  -> win (boards=23 wins=23)
+[47] state=LEVEL_UP (4.0s)
+  tap Watch Ad (LEVEL_UP)
+[48] state=BOARD (visual) (1.2s)
+  plan: lep=[5, 0] pot=[4, 5] base=15 total=23
+  -> win (boards=24 wins=24)
+[49] state=RESULT_FREE (3.5s)
+  tap Play Again
+[50] state=BOARD (visual) (1.2s)
+  plan: lep=[0, 0] pot=[2, 5] base=18 total=26
+  -> win (boards=25 wins=25)
+[51] state=RESULT_FREE (3.7s)
+  tap Play Again
+[52] state=BOARD (visual) (1.3s)
+  plan: lep=[2, 0] pot=[2, 5] base=4 total=12
+  -> win (boards=26 wins=26)
+[53] state=RESULT_AD (3.4s)
+  tap Watch Ad (RESULT_AD)
+[54] state=BOARD (visual) (1.5s)
+  plan: lep=[3, 0] pot=[2, 5] base=17 total=25
+  residual repair: 4 taps
+  -> win (boards=27 wins=27)
+[55] state=RESULT_FREE (4.0s)
+  tap Play Again
+[56] state=BOARD (visual) (1.6s)
+  plan: lep=[5, 0] pot=[3, 5] base=10 total=18
+  -> win (boards=28 wins=28)
+[57] state=RESULT_FREE (3.9s)
+  tap Play Again
+[58] state=BOARD (visual) (1.7s)
+  plan: lep=[3, 0] pot=[5, 5] base=22 total=30
+  -> win (boards=29 wins=29)
+[59] state=RESULT_AD (4.1s)
+  tap Watch Ad (RESULT_AD)
+[60] state=BOARD (visual) (2.0s)
+  plan: lep=[1, 0] pot=[3, 5] base=26 total=34
+  -> win (boards=30 wins=30)
+[61] state=RESULT_FREE (4.2s)
+  tap Play Again
+[62] state=BOARD (visual) (1.9s)
+  plan: lep=[4, 0] pot=[2, 5] base=8 total=16
+  -> win (boards=31 wins=31)
+[63] state=RESULT_FREE (4.1s)
+  tap Play Again
+[64] state=BOARD (visual) (1.9s)
+  plan: lep=[4, 0] pot=[1, 5] base=11 total=19
+  -> win (boards=32 wins=32)
+[65] state=LEVEL_UP (4.1s)
+  tap Watch Ad (LEVEL_UP)
+[66] state=BOARD (visual) (1.8s)
+  plan: lep=[1, 0] pot=[3, 5] base=19 total=27
+  -> win (boards=33 wins=33)
+[67] state=RESULT_FREE (3.9s)
+  tap Play Again
+[68] state=BOARD (visual) (1.8s)
+  plan: lep=[2, 0] pot=[4, 5] base=19 total=27
+  -> win (boards=34 wins=34)
+[69] state=RESULT_FREE (4.3s)
+  tap Play Again
+[70] state=BOARD (visual) (1.8s)
+  plan: lep=[0, 0] pot=[3, 5] base=24 total=32
+  -> win (boards=35 wins=35)
+[71] state=RESULT_AD (4.3s)
+  tap Watch Ad (RESULT_AD)
+[72] state=BOARD (visual) (2.0s)
+  plan: lep=[4, 0] pot=[5, 5] base=12 total=20
+  residual repair: 3 taps
+  -> win (boards=36 wins=36)
+[73] state=RESULT_FREE (3.9s)
+  tap Play Again
+[74] state=BOARD (visual) (1.7s)
+  plan: lep=[1, 0] pot=[1, 5] base=4 total=12
+  -> win (boards=37 wins=37)
+[75] state=RESULT_FREE (3.8s)
+  tap Play Again
+[76] state=BOARD (visual) (1.7s)
+  plan: lep=[3, 0] pot=[1, 5] base=9 total=17
+  -> win (boards=38 wins=38)
+[77] state=RESULT_AD (4.1s)
+  tap Watch Ad (RESULT_AD)
+[78] state=BOARD (visual) (1.5s)
+  plan: lep=[5, 0] pot=[2, 5] base=14 total=22
+  -> win (boards=39 wins=39)
+[79] state=RESULT_FREE (3.8s)
+  tap Play Again
+[80] state=BOARD (visual) (1.7s)
+  plan: lep=[1, 0] pot=[0, 5] base=16 total=24
+  -> win (boards=40 wins=40)
+[81] state=LEVEL_UP (4.2s)
+  tap Watch Ad (LEVEL_UP)
+[82] state=BOARD (visual) (1.8s)
+  plan: lep=[1, 0] pot=[4, 5] base=18 total=26
+  -> win (boards=41 wins=41)
+[83] state=RESULT_FREE (4.2s)
+  tap Play Again
+[84] state=BOARD (visual) (1.7s)
+  plan: lep=[1, 0] pot=[4, 5] base=16 total=24
+  -> win (boards=42 wins=42)
+[85] state=RESULT_FREE (4.3s)
+  tap Play Again
+[86] state=BOARD (visual) (1.8s)
+  plan: lep=[0, 0] pot=[4, 5] base=20 total=28
+  -> win (boards=43 wins=43)
+[87] state=RESULT_AD (4.4s)
+  tap Watch Ad (RESULT_AD)
+[88] state=BOARD (visual) (1.7s)
+  plan: lep=[1, 0] pot=[1, 5] base=4 total=12
+  -> win (boards=44 wins=44)
+[89] state=RESULT_FREE (3.8s)
+  tap Play Again
+[90] state=BOARD (visual) (1.6s)
+  plan: lep=[5, 0] pot=[1, 5] base=20 total=28
+  -> win (boards=45 wins=45)
+[91] state=RESULT_FREE (4.4s)
+  tap Play Again
+[92] state=BOARD (visual) (1.7s)
+  plan: lep=[3, 0] pot=[3, 5] base=4 total=12
+  -> win (boards=46 wins=46)
+[93] state=RESULT_AD (3.7s)
+  tap Watch Ad (RESULT_AD)
+[94] state=BOARD (visual) (1.7s)
+  plan: lep=[5, 0] pot=[5, 5] base=4 total=12
+  -> win (boards=47 wins=47)
+[95] state=RESULT_FREE (3.9s)
+  tap Play Again
+[96] state=BOARD (visual) (1.6s)
+  plan: lep=[5, 0] pot=[5, 5] base=4 total=12
+  -> win (boards=48 wins=48)
+[97] state=RESULT_FREE (4.0s)
+  tap Play Again
+[98] state=BOARD (visual) (1.7s)
+  plan: lep=[1, 0] pot=[1, 5] base=4 total=12
+  -> win (boards=49 wins=49)
+[99] state=RESULT_AD (3.8s)
+  tap Watch Ad (RESULT_AD)
+[100] state=BOARD (visual) (1.6s)
+  plan: lep=[1, 0] pot=[4, 5] base=11 total=19
+  -> win (boards=50 wins=50)
+[101] state=LEVEL_UP (4.5s)
+  tap Watch Ad (LEVEL_UP)
+[102] state=BOARD (visual) (1.6s)
+  plan: lep=[2, 0] pot=[5, 5] base=19 total=27
+  -> win (boards=51 wins=51)
+[103] state=RESULT_FREE (3.9s)
+  tap Play Again
+[104] state=BOARD (visual) (1.7s)
+  plan: lep=[2, 0] pot=[4, 5] base=15 total=23
+  -> win (boards=52 wins=52)
+[105] state=RESULT_FREE (3.8s)
+  tap Play Again
+[106] state=BOARD (visual) (1.7s)
+  plan: lep=[4, 0] pot=[3, 5] base=18 total=26
+  -> win (boards=53 wins=53)
+[107] state=RESULT_AD (4.4s)
+  tap Watch Ad (RESULT_AD)
+[108] state=BOARD (visual) (1.5s)
+  plan: lep=[0, 0] pot=[0, 5] base=4 total=12
+  -> win (boards=54 wins=54)
+[109] state=RESULT_FREE (3.7s)
+  tap Play Again
+[110] state=BOARD (visual) (1.4s)
+  plan: lep=[2, 0] pot=[0, 5] base=13 total=21
+  -> win (boards=55 wins=55)
+[111] state=RESULT_FREE (3.9s)
+  tap Play Again
+[112] state=BOARD (visual) (1.7s)
+  plan: lep=[3, 0] pot=[0, 5] base=19 total=27
+  -> win (boards=56 wins=56)
+[113] state=RESULT_AD (4.3s)
+  tap Watch Ad (RESULT_AD)
+[114] state=BOARD (visual) (1.6s)
+  plan: lep=[3, 0] pot=[1, 5] base=13 total=21
+  -> win (boards=57 wins=57)
+[115] state=RESULT_FREE (3.9s)
+  tap Play Again
+[116] state=BOARD (visual) (1.9s)
+  plan: lep=[1, 0] pot=[1, 5] base=4 total=12
+  -> win (boards=58 wins=58)
+[117] state=RESULT_FREE (3.9s)
+  tap Play Again
+[118] state=BOARD (visual) (1.8s)
+  plan: lep=[4, 0] pot=[4, 5] base=4 total=12
+  -> win (boards=59 wins=59)
+[119] state=RESULT_AD (4.0s)
+  tap Watch Ad (RESULT_AD)
+[120] state=BOARD (visual) (1.7s)
+  plan: lep=[5, 0] pot=[2, 5] base=14 total=22
+  -> win (boards=60 wins=60)
+[121] state=LEVEL_UP (3.8s)
+  tap Watch Ad (LEVEL_UP)
+[122] state=BOARD (visual) (1.5s)
+  plan: lep=[5, 0] pot=[4, 5] base=16 total=24
+  -> win (boards=61 wins=61)
+[123] state=RESULT_FREE (4.3s)
+  tap Play Again
+[124] state=BOARD (visual) (1.9s)
+  plan: lep=[5, 0] pot=[0, 5] base=16 total=24
+  -> win (boards=62 wins=62)
+[125] state=RESULT_FREE (4.3s)
+  tap Play Again
+[126] state=BOARD (visual) (1.9s)
+  plan: lep=[1, 0] pot=[4, 5] base=26 total=34
+  -> win (boards=63 wins=63)
+[127] state=RESULT_AD (4.6s)
+  tap Watch Ad (RESULT_AD)
+[128] state=BOARD (visual) (1.7s)
+  plan: lep=[4, 0] pot=[4, 5] base=4 total=12
+  -> win (boards=64 wins=64)
+[129] state=RESULT_FREE (3.8s)
+  tap Play Again
+[130] state=BOARD (visual) (1.8s)
+  plan: lep=[4, 0] pot=[2, 5] base=10 total=18
+  -> win (boards=65 wins=65)
+[131] state=RESULT_FREE (4.0s)
+  tap Play Again
+[132] state=BOARD (visual) (1.9s)
+  plan: lep=[4, 0] pot=[1, 5] base=17 total=25
+  -> win (boards=66 wins=66)
+[133] state=RESULT_AD (4.3s)
+  tap Watch Ad (RESULT_AD)
+[134] state=BOARD (visual) (1.8s)
+  plan: lep=[0, 0] pot=[3, 5] base=11 total=19
+  -> win (boards=67 wins=67)
+[135] state=RESULT_FREE (3.9s)
+  tap Play Again
+[136] state=BOARD (visual) (1.8s)
+  plan: lep=[4, 0] pot=[1, 5] base=13 total=21
+  -> win (boards=68 wins=68)
+[137] state=RESULT_FREE (4.4s)
+  tap Play Again
+[138] state=BOARD (visual) (1.8s)
+  plan: lep=[4, 0] pot=[0, 5] base=19 total=27
+  -> win (boards=69 wins=69)
+[139] state=LEVEL_UP (4.4s)
+  tap Watch Ad (LEVEL_UP)
+[140] state=BOARD (visual) (1.7s)
+  plan: lep=[3, 0] pot=[3, 5] base=4 total=12
+  -> win (boards=70 wins=70)
+[141] state=RESULT_FREE (3.9s)
+  tap Play Again
+[142] state=BOARD (visual) (1.8s)
+  plan: lep=[4, 0] pot=[4, 5] base=4 total=12
+  -> win (boards=71 wins=71)
+[143] state=RESULT_FREE (4.0s)
+  tap Play Again
+[144] state=BOARD (visual) (1.9s)
+  plan: lep=[0, 0] pot=[2, 5] base=12 total=20
+  -> win (boards=72 wins=72)
+[145] state=RESULT_AD (4.2s)
+  tap Watch Ad (RESULT_AD)
+[146] state=BOARD (visual) (1.7s)
+  plan: lep=[0, 0] pot=[2, 5] base=35 total=43
+  -> win (boards=73 wins=73)
+[147] state=RESULT_FREE (4.3s)
+  tap Play Again
+[148] state=BOARD (visual) (2.0s)
+  plan: lep=[0, 0] pot=[4, 5] base=14 total=22
+  -> win (boards=74 wins=74)
+[149] state=RESULT_FREE (4.1s)
+  tap Play Again
+[150] state=BOARD (visual) (2.0s)
+  plan: lep=[4, 0] pot=[4, 5] base=4 total=12
+  -> win (boards=75 wins=75)
+[151] state=RESULT_AD (3.9s)
+  tap Watch Ad (RESULT_AD)
+[152] state=BOARD (visual) (1.9s)
+  plan: lep=[0, 0] pot=[3, 5] base=18 total=26
+  -> win (boards=76 wins=76)
+[153] state=RESULT_FREE (4.4s)
+  tap Play Again
+[154] state=BOARD (visual) (1.8s)
+  plan: lep=[3, 0] pot=[4, 5] base=21 total=29
+  -> win (boards=77 wins=77)
+[155] state=RESULT_FREE (4.3s)
+  tap Play Again
+[156] state=BOARD (visual) (1.8s)
+  plan: lep=[2, 0] pot=[1, 5] base=10 total=18
+  -> win (boards=78 wins=78)
+[157] state=LEVEL_UP (3.7s)
+  tap Watch Ad (LEVEL_UP)
+[158] state=BOARD (visual) (1.8s)
+  plan: lep=[3, 0] pot=[4, 5] base=8 total=16
+  -> win (boards=79 wins=79)
+[159] state=RESULT_FREE (3.9s)
+  tap Play Again
+[160] state=BOARD (visual) (1.7s)
+  plan: lep=[3, 0] pot=[3, 5] base=4 total=12
+  -> win (boards=80 wins=80)
+[161] state=RESULT_FREE (3.8s)
+  tap Play Again
+[162] state=BOARD (visual) (1.8s)
+  plan: lep=[0, 0] pot=[4, 5] base=21 total=29
+  -> win (boards=81 wins=81)
+[163] state=RESULT_AD (4.4s)
+  tap Watch Ad (RESULT_AD)
+[164] state=BOARD (visual) (2.3s)
+  plan: lep=[2, 0] pot=[4, 5] base=23 total=31
+  residual repair: 1 taps
+  -> win (boards=82 wins=82)
+[165] state=RESULT_FREE (4.6s)
+  tap Play Again
+[166] state=BOARD (visual) (2.0s)
+  plan: lep=[0, 0] pot=[2, 5] base=11 total=19
+  -> win (boards=83 wins=83)
+[167] state=RESULT_FREE (3.9s)
+  tap Play Again
+[168] state=BOARD (visual) (2.0s)
+  plan: lep=[3, 0] pot=[1, 5] base=9 total=17
+  -> win (boards=84 wins=84)
+[169] state=RESULT_AD (3.9s)
+  tap Watch Ad (RESULT_AD)
+[170] state=BOARD (visual) (1.9s)
+  plan: lep=[2, 0] pot=[4, 5] base=23 total=31
+  -> win (boards=85 wins=85)
+[171] state=RESULT_FREE (4.6s)
+  tap Play Again
+[172] state=BOARD (visual) (1.8s)
+  plan: lep=[2, 0] pot=[3, 5] base=18 total=26
+  -> win (boards=86 wins=86)
+[173] state=RESULT_FREE (4.4s)
+  tap Play Again
+[174] state=BOARD (visual) (2.0s)
+  plan: lep=[1, 0] pot=[1, 5] base=4 total=12
+  -> win (boards=87 wins=87)
+[175] state=RESULT_AD (3.9s)
+  tap Watch Ad (RESULT_AD)
+[176] state=BOARD (visual) (1.8s)
+  plan: lep=[4, 0] pot=[1, 5] base=13 total=21
+  -> win (boards=88 wins=88)
+[177] state=LEVEL_UP (4.2s)
+  tap Watch Ad (LEVEL_UP)
+[178] state=BOARD (visual) (1.6s)
+  plan: lep=[5, 0] pot=[5, 5] base=4 total=12
+  -> win (boards=89 wins=89)
+[179] state=RESULT_FREE (3.9s)
+  tap Play Again
+[180] state=BOARD (visual) (1.8s)
+  plan: lep=[4, 0] pot=[5, 5] base=12 total=20
+  -> win (boards=90 wins=90)
+[181] state=RESULT_FREE (3.8s)
+  tap Play Again
+[182] state=BOARD (visual) (1.9s)
+  plan: lep=[0, 0] pot=[1, 5] base=23 total=31
+  -> win (boards=91 wins=91)
+[183] state=RESULT_AD (4.8s)
+  tap Watch Ad (RESULT_AD)
+[184] state=BOARD (visual) (1.6s)
+  plan: lep=[2, 0] pot=[2, 5] base=4 total=12
+  -> win (boards=92 wins=92)
+[185] state=RESULT_FREE (4.0s)
+  tap Play Again

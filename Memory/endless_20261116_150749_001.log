@@ -1,0 +1,42 @@
+run_loop start 2026-11-16T15:07:50 max_boards=500 dry_run=False
+[1] state=BOARD (visual) (1.4s)
+  plan: lep=[0, 0] pot=[1, 3] base=12 total=20
+  repair frames -> 20261116_150802_repair_after.png
+  residual repair: 1 taps
+  -> win (boards=1 wins=1)
+[2] state=RESULT_FREE (3.9s)
+  tap Play Again
+[3] state=BOARD (visual) (1.3s)
+  plan: lep=[3, 0] pot=[2, 3] base=8 total=16
+  -> win (boards=2 wins=2)
+[4] state=RESULT_AD (3.5s)
+  tap Watch Ad (RESULT_AD)
+  [ad] poll 1: state=AD_WEBVIEW
+  [ad] rewarded creative playing -> waiting (3s/75s)
+  [ad] poll 2: state=AD_WEBVIEW
+  [ad] rewarded creative playing -> waiting (10s/75s)
+  [ad] poll 3: state=AD_WEBVIEW
+  [ad] rewarded creative playing -> waiting (15s/75s)
+  [ad] poll 4: state=AD_WEBVIEW
+  [ad] rewarded creative playing -> waiting (21s/75s)
+  [ad] poll 5: state=AD_WEBVIEW
+  [ad] rewarded creative playing -> waiting (27s/75s)
+  [ad] poll 6: state=AD_STORE
+  [ad] Play Store sheet -> tap Close
+  [ad] poll 7: state=AD_WEBVIEW
+  [ad] rewarded creative playing -> waiting (38s/75s)
+  [ad] poll 8: state=AD_WEBVIEW
+  [ad] rewarded creative playing -> waiting (43s/75s)
+  [ad] poll 9: state=AD_WEBVIEW
+  [ad] rewarded creative playing -> waiting (48s/75s)
+  [ad] poll 10: state=AD_STORE
+  [ad] Play Store sheet -> tap Close
+  [ad] poll 11: state=AD_WEBVIEW
+  [ad] rewarded creative playing -> waiting (59s/75s)
+  [ad] poll 12: state=AD_WEBVIEW
+  [ad] rewarded creative playing -> waiting (64s/75s)
+  [ad] poll 13: state=AD_WEBVIEW
+  [ad] rewarded creative playing -> waiting (70s/75s)
+  [ad] poll 14: state=AD_STORE
+  [ad] Play Store sheet -> tap Close
+  [ad] board visible at poll 15 -> closed

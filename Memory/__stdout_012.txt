@@ -1,0 +1,5 @@
+run_loop start 2026-11-16T17:41:32 max_boards=50 dry_run=False
+  screen dim/locked -> recovering display
+[1] state=TIME_UP (9.9s)
+  Time's Up -> doing nothing (hard user rule)
+  waiting up to 7200s for a new board (zero taps)

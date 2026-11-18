@@ -1,0 +1,26 @@
+run_loop start 2026-11-16T20:46:48 max_boards=50 dry_run=False
+[1] state=BOARD (visual) (1.8s)
+  plan: lep=[1, 0] pot=[3, 3] base=10 total=18
+  -> win (boards=1 wins=1)
+[2] state=RESULT_FREE (3.8s)
+  tap Play Again
+[3] state=BOARD (visual) (1.8s)
+  plan: lep=[3, 0] pot=[2, 3] base=11 total=19
+  repair frames -> 20261116_204720_repair_after.png
+  residual repair: 1 taps
+  -> win (boards=2 wins=2)
+[4] state=RESULT_FREE (3.8s)
+  tap Play Again
+[5] state=BOARD (visual) (1.7s)
+  plan: lep=[2, 0] pot=[2, 3] base=2 total=10
+  -> win (boards=3 wins=3)
+[6] state=RESULT_AD (3.7s)
+  tap Watch Ad (RESULT_AD)
+  [ad] poll 1: state=AD_WEBVIEW
+  [ad] creative playing -> waiting (4s, close at 18s, badge 0.05)
+  [ad] poll 2: state=AD_WEBVIEW
+  [ad] creative playing -> waiting (8s, close at 18s, badge 0.05)
+  [ad] poll 3: state=AD_WEBVIEW
+  [ad] creative playing -> waiting (13s, close at 18s, badge 0.05)
+  [ad] poll 4: state=AD_WEBVIEW
+  [ad] creative playing -> waiting (17s, close at 18s, badge 0.05)

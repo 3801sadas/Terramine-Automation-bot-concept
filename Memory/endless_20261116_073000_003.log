@@ -1,0 +1,3 @@
+run_loop start 2026-11-16T15:24:41 max_boards=50 dry_run=False
+[1] state=TIME_UP (3.5s)
+  Time's Up -> doing nothing (hard user rule)

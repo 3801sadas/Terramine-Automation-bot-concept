@@ -1,0 +1,50 @@
+run_loop start 2026-11-16T17:11:13 max_boards=50 dry_run=False
+[1] state=TIME_UP (3.6s)
+  Time's Up -> doing nothing (hard user rule)
+  waiting up to 3600s for a new board (zero taps)
+  new board appeared -> playing it
+  plan: lep=[1, 0] pot=[0, 3] base=10 total=18
+  -> win (boards=1 wins=1)
+[2] state=RESULT_FREE (3.5s)
+  tap Play Again
+[3] state=BOARD (visual) (1.5s)
+  plan: lep=[2, 0] pot=[3, 3] base=10 total=18
+  -> win (boards=2 wins=2)
+[4] state=RESULT_AD (3.5s)
+  tap Watch Ad (RESULT_AD)
+  [ad] poll 1: state=AD_WEBVIEW
+  [ad] rewarded creative playing -> waiting (3s/75s)
+  [ad] poll 2: state=AD_WEBVIEW
+  [ad] rewarded creative playing -> waiting (7s/75s)
+  [ad] poll 3: state=AD_WEBVIEW
+  [ad] rewarded creative playing -> waiting (11s/75s)
+  [ad] poll 4: state=AD_STORE
+  [ad] Play Store sheet -> tap Close
+  [ad] poll 5: state=AD_WEBVIEW
+  [ad] rewarded creative playing -> waiting (21s/75s)
+  [ad] poll 6: state=AD_WEBVIEW
+  [ad] rewarded creative playing -> waiting (26s/75s)
+  [ad] poll 7: state=AD_WEBVIEW
+  [ad] rewarded creative playing -> waiting (30s/75s)
+  [ad] poll 8: state=AD_WEBVIEW
+  [ad] rewarded creative playing -> waiting (34s/75s)
+  [ad] poll 9: state=AD_WEBVIEW
+  [ad] rewarded creative playing -> waiting (38s/75s)
+  [ad] poll 10: state=AD_WEBVIEW
+  [ad] rewarded creative playing -> waiting (43s/75s)
+  [ad] poll 11: state=AD_WEBVIEW
+  [ad] rewarded creative playing -> waiting (47s/75s)
+  [ad] poll 12: state=AD_STORE
+  [ad] Play Store sheet -> tap Close
+  [ad] poll 13: state=AD_WEBVIEW
+  [ad] rewarded creative playing -> waiting (57s/75s)
+  [ad] poll 14: state=AD_WEBVIEW
+  [ad] rewarded creative playing -> waiting (63s/75s)
+  [ad] poll 15: state=AD_WEBVIEW
+  [ad] rewarded creative playing -> waiting (69s/75s)
+  [ad] poll 16: state=AD_STORE
+  [ad] Play Store sheet -> tap Close
+  [ad] board visible at poll 17 -> closed
+[5] state=BOARD (visual) (1.2s)
+  board clock already critical (red timer) -> not tapping
+  waiting up to 3600s for a fresh board

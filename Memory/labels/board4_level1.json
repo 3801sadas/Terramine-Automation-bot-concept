@@ -1,0 +1,33 @@
+{
+  "image": "C:\\Users\\Usernom\\Documents\\Terramine\\Memory\\derived\\device\\board_new_01.png",
+  "captured": "2026-11-15",
+  "level": "Level 1 - Novice",
+  "grid": {"n": 4, "origin": [41, 516], "cell": 252,
+           "ui_x": [45, 297, 549, 801, 1044], "ui_y": [461, 713, 965, 1217, 1460]},
+  "note": "labels from APK tile-template NCC, confirmed by gold-road arm mask; do NOT load as a 6x6 exemplar source",
+  "cells": {
+    "0,0": {"kind": "LEP", "sides": "E"},
+    "0,1": {"kind": "curve", "sides": "NW"},
+    "0,2": {"kind": "grass", "sides": ""},
+    "0,3": {"kind": "grass", "sides": ""},
+    "1,0": {"kind": "grass", "sides": ""},
+    "1,1": {"kind": "straight", "sides": "EW"},
+    "1,2": {"kind": "curve", "sides": "SW"},
+    "1,3": {"kind": "POT", "sides": "W"},
+    "2,0": {"kind": "grass", "sides": ""},
+    "2,1": {"kind": "curve", "sides": "NW"},
+    "2,2": {"kind": "curve", "sides": "ES"},
+    "2,3": {"kind": "grass", "sides": ""},
+    "3,0": {"kind": "grass", "sides": ""},
+    "3,1": {"kind": "grass", "sides": ""},
+    "3,2": {"kind": "grass", "sides": ""},
+    "3,3": {"kind": "grass", "sides": ""}
+  },
+  "solution": {
+    "total_taps": 10,
+    "taps": {"0,1": 3, "1,1": 1, "2,1": 1, "2,2": 2, "1,2": 3},
+    "order": ["0,1", "1,1", "2,1", "2,2", "1,2"],
+    "path": ["0,0", "0,1", "1,1", "2,1", "2,2", "1,2", "1,3"],
+    "validated": true
+  }
+}

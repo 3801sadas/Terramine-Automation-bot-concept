@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\Users\Usernom\Documents\Terramine\src\run_loop.py", line 594, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\Usernom\Documents\Terramine\src\run_loop.py", line 353, in main
+    img2 = wait_for_board(WAIT_S)
+  File "C:\Users\Usernom\Documents\Terramine\src\run_loop.py", line 77, in wait_for_board
+    img = device.screenshot()
+  File "C:\Users\Usernom\Documents\Terramine\src\device.py", line 55, in screenshot
+    raise ValueError("black frame")
+ValueError: black frame

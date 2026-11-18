@@ -1,0 +1,5 @@
+run_loop start 2026-11-18T20:35:42 max_boards=50 dry_run=False
+[1] state=TIME_UP (3.4s)
+  Time's Up -> doing nothing (hard user rule)
+  waiting up to 120s for a new board (zero taps)
+  wait expired -> halting

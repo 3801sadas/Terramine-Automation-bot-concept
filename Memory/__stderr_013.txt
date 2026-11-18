@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\Users\Usernom\Documents\Terramine\src\run_loop.py", line 594, in <module>
+  File "C:\Users\Usernom\Documents\Terramine\src\run_loop.py", line 296, in main
+    last_plan_sig = None
+              ^^^^^^^^^^
+  File "C:\Users\Usernom\Documents\Terramine\src\device.py", line 45, in screenshot
+    """
+    
+  File "C:\Users\Usernom\Documents\Terramine\src\device.py", line 34, in adb
+    raise AdbError(f"adb {' '.join(args)} failed rc={p.returncode}: {err}")
+device.AdbError: adb exec-out screencap -p failed rc=4294967295: error: device 'R5CT63BQTTH' not found

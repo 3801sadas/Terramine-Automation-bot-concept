@@ -1,0 +1,35 @@
+run_loop start 2026-11-16T17:34:34 max_boards=50 dry_run=False
+[1] state=BOARD (visual) (1.3s)
+  plan: lep=[2, 0] pot=[1, 3] base=8 total=16
+  -> win (boards=1 wins=1)
+[2] state=RESULT_FREE (3.5s)
+  tap Play Again
+[3] state=BOARD (visual) (1.3s)
+  plan: lep=[0, 0] pot=[1, 3] base=12 total=20
+  -> win (boards=2 wins=2)
+[4] state=RESULT_AD (3.5s)
+  tap Watch Ad (RESULT_AD)
+  [ad] poll 1: state=AD_WEBVIEW
+  [ad] creative playing -> waiting (3s, close at 18s, badge 0.07)
+  [ad] poll 2: state=AD_WEBVIEW
+  [ad] creative playing -> waiting (7s, close at 18s, badge 0.07)
+  [ad] poll 3: state=AD_WEBVIEW
+  [ad] creative playing -> waiting (11s, close at 18s, badge 0.09)
+  [ad] poll 4: state=AD_STORE
+  [ad] Play Store sheet -> tap Close
+  [ad] poll 5: state=AD_WEBVIEW
+  [ad] tap close (975,584) score=0.55 region=mid_right method=known_point
+  [ad] poll 6: state=AD_WEBVIEW
+  [ad] tap close (975,584) score=0.55 region=mid_right method=known_point
+  [ad] poll 7: state=AD_WEBVIEW
+  [ad] tap close (1007,152) score=0.55 region=top_right method=known_point
+  [ad] poll 8: state=AD_WEBVIEW
+  [ad] tap close (1007,152) score=0.55 region=top_right method=known_point
+  [ad] poll 9: state=AD_WEBVIEW
+  [ad] poll 10: state=AD_STORE
+  [ad] Play Store sheet -> tap Close
+  [ad] poll 11: state=AD_WEBVIEW
+  [ad] poll 12: state=AD_WEBVIEW
+  [ad] poll 13: state=AD_WEBVIEW
+  [ad] tap close (72,153) score=0.83 region=top_left method=template
+  [ad] board visible at poll 14 -> closed

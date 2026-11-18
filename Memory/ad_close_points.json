@@ -1,0 +1,44 @@
+{
+  "points": [
+    {
+      "x": 975,
+      "y": 584,
+      "source": "ad_flow01 frame_002144_t069.15s (user-confirmed)"
+    },
+    {
+      "x": 993,
+      "y": 581,
+      "source": "live test_ad_04-annotated (user-confirmed)"
+    },
+    {
+      "x": 1007,
+      "y": 152,
+      "source": "ad_puzzle_01 top-right X (AdMob playable, reward granted)"
+    }
+  ],
+  "primary_region_center": [
+    985,
+    582
+  ],
+  "strategy": "Mid-right close button (~985,582) confirmed on 2 ads. Poll/wait for close control then tap this region; if no effect, scan top corners (TL ~60,60 / TR ~1020,60). Repeat taps with short waits/screenshots until screen returns to game/result (successive ad screens possible). Collect more samples per network (AdMob/Meta/Unity).",
+  "fallback_regions": {
+    "mid_right": [
+      860,
+      480,
+      1065,
+      700
+    ],
+    "top_right": [
+      920,
+      20,
+      1075,
+      220
+    ],
+    "top_left": [
+      5,
+      20,
+      180,
+      260
+    ]
+  }
+}

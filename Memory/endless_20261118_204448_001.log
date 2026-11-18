@@ -1,0 +1,46 @@
+run_loop start 2026-11-18T20:44:48 max_boards=50 dry_run=False
+[1] state=BOARD (visual) (1.2s)
+  plan: lep=[0, 0] pot=[2, 4] base=8 total=16
+  -> win (boards=1 wins=1)
+[2] state=RESULT_FREE (3.5s)
+  tap Play Again
+[3] state=BOARD (visual) (1.4s)
+  plan: lep=[1, 0] pot=[2, 4] base=13 total=21
+  -> win (boards=2 wins=2)
+[4] state=RESULT_AD (3.6s)
+  tap Watch Ad (RESULT_AD)
+  [ad] poll 1: state=AD_WEBVIEW
+  [ad] creative playing -> waiting (3s, close at 18s, badge 0.30)
+  [ad] reward granted (badge 1.00) -> close now at (987,574)
+  [ad] reward granted (badge 1.00) -> close now at (987,574)
+  [ad] reward granted (badge 1.00) -> close now at (141,151)
+  [ad] reward granted (badge 1.00) -> close now at (141,151)
+  [ad] reward granted (badge 1.00) -> close now at (1008,153)
+  [ad] board visible at poll 7 -> closed
+[5] state=BOARD (visual) (1.4s)
+  plan: lep=[3, 0] pot=[3, 4] base=3 total=11
+  -> win (boards=3 wins=3)
+[6] state=RESULT_FREE (3.7s)
+  tap Play Again
+[7] state=BOARD (visual) (1.4s)
+  plan: lep=[4, 0] pot=[4, 4] base=3 total=11
+  -> win (boards=4 wins=4)
+[8] state=RESULT_FREE (3.5s)
+  tap Play Again
+[9] state=BOARD (visual) (8.8s)
+  plan: lep=[4, 0] pot=[3, 4] base=5 total=13
+  -> win (boards=5 wins=5)
+[10] state=RESULT_AD (3.3s)
+  tap Watch Ad (RESULT_AD)
+  [ad] poll 1: state=AD_WEBVIEW
+  [ad] creative playing -> waiting (4s, close at 18s, badge 0.30)
+  [ad] reward granted (badge 1.00) -> close now at (1008,153)
+  [ad] board visible at poll 3 -> closed
+[11] state=BOARD (visual) (1.4s)
+  low clock (amber timer) -> no mistakes, no re-capture
+  plan: lep=[1, 0] pot=[2, 4] base=19 total=19
+  residual repair skipped: clock critical
+  -> unknown (boards=6 wins=5)
+[12] state=TIME_UP (3.6s)
+  Time's Up -> doing nothing (hard user rule)
+  waiting up to 120s for a new board (zero taps)
