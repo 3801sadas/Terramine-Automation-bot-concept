@@ -1,6 +1,6 @@
-# Terramine — autonomous Gold Rush solver
-
-An unattended bot that plays the **Gold Rush** minigame in TerraMine
+# Terramine automated Gold Mine minigame solver
+This readme was made by AI as I am busy and actually have a life
+An unattended bot that plays the **Gold Rush** minigame in TerraMine Gold Mine maze minigame
 (`com.terramine.app`) on a real Android phone. It captures the screen over ADB,
 reads the board with local computer vision, solves the tile-rotation puzzle,
 validates the plan offline, taps it, and repeats — including through rewarded
