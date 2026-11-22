@@ -1,5 +1,5 @@
 # Terramine automated Gold Mine minigame solver
-This readme was made by AI as I am busy and actually have a life
+**This readme was made by AI as I am busy and actually have a life**
 An unattended bot that plays the **Gold Rush** minigame in TerraMine Gold Mine maze minigame
 (`com.terramine.app`) on a real Android phone. It captures the screen over ADB,
 reads the board with local computer vision, solves the tile-rotation puzzle,
@@ -189,6 +189,10 @@ Every failure that cost a board was logged with its frame, timeline and root
 cause (P001–P013) before being fixed. That log is the most useful part of this
 repo if you want to see how the perception and ad handling actually break.
 
+I was joking. It still sucks and fails a lot but it is mostly automatic but may require some supervision
+Perception takes a long time (analysing the phone screen)
+Actual solving and taps are REALLY FUCKING fast
+
 ---
 
 ## Notes & limitations
@@ -200,5 +204,8 @@ repo if you want to see how the perception and ad handling actually break.
   `src/endless.py`) for your setup.
 - The decompiled bundles (`goldrush_bundle.txt`, `tb_bundle.txt`) are included
   for rule provenance only; the runtime never reads them.
-- For personal/educational use. Automating a game may violate its terms of
+- For personal/educational use. Automating a game ~~may~~ will violate its terms of
   service — use at your own risk.
+- The devs have confirmed that more ad partners will be rolling out in the game
+- ~~If you want to bypass the ads between the games "watch ad - Play Again" then roll back to version 1.39 and use InstallWithOptions to set the installation source to com.android.vending~~
+That also violates the TOS I think so maybe don't do that
