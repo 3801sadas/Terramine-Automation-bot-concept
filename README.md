@@ -1,6 +1,17 @@
 # (Working but incomplete) Terramine automated Gold Mine minigame solver
 **This readme was made by AI as I am busy and actually have a life**
 
+## What is TerraMine?
+"Stake a Claim.
+Visit Friends.
+Earn Money.
+Buy virtual properties on a real-world map, visit other players' mines to earn TerraBucks, and watch your passive income grow around the clock."
+
+
+You can probably guess that this is a game where users earn money by play repetitive minigames and watch ads to earn money. Obviously some of us here are not that dedicated, so we ~~want to cheat and violate the Terms Of Service~~ want to automate some repetitive parts of the game to our liking. 
+
+## What is this? ##
+
 An unattended bot that plays the **Gold Rush** minigame in TerraMine Gold Mine maze minigame
 (`com.terramine.app`) on a real Android phone. It captures the screen over ADB,
 reads the board with local computer vision, solves the tile-rotation puzzle,
