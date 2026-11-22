@@ -1,4 +1,4 @@
-# Terramine automated Gold Mine minigame solver
+# (Working but incomplete) Terramine automated Gold Mine minigame solver
 **This readme was made by AI as I am busy and actually have a life**
 
 An unattended bot that plays the **Gold Rush** minigame in TerraMine Gold Mine maze minigame
