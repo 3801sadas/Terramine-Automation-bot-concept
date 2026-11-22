@@ -90,6 +90,10 @@ python src/solve_from_image.py shot.png --exclude
 
 Options: `--no-mistakes`, `--mistakes N`.
 
+
+**Explanation** Mistakes here can be configured, because if the bot intentionally makes mistakes you actually get more TB in the long term
+Before running the below Python Script please navigate into a Gold Mine maze minigame that is under Level 100 for it to work.
+
 Run the loop for a fixed number of boards:
 
 ```bash
@@ -207,5 +211,4 @@ Actual solving and taps are REALLY FUCKING fast
 - For personal/educational use. Automating a game ~~may~~ will violate its terms of
   service — use at your own risk.
 - The devs have confirmed that more ad partners will be rolling out in the game
-- ~~If you want to bypass the ads between the games "watch ad - Play Again" then roll back to version 1.39 and use InstallWithOptions to set the installation source to com.android.vending~~
-That also violates the TOS I think so maybe don't do that
+- ~~If you want to bypass the ads between the games "watch ad - Play Again" then roll back to version 1.39 and use InstallWithOptions to set the installation source to com.android.vending~~ That also violates the TOS I think so maybe don't do that
