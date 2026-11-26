@@ -199,15 +199,13 @@ These are hard constraints, enforced in code and in tests:
 
 Tracked in `STATE.md` and `Memory/derived/PROBLEMS.md`:
 
-~~- **100/100** consecutive 6×6 boards solved, and **92/92** in a later batch.
-- Recent supervised runs: **14/14** boards won with zero dead boards after the
-  move-budget fix (P013).
+
 
 Every failure that cost a board was logged with its frame, timeline and root
 cause (P001–P013) before being fixed. That log is the most useful part of this
 repo if you want to see how the perception and ad handling actually break.~~
 
-I was joking. It still sucks and fails a lot but it is mostly automatic but may require some supervision
+It still sucks and fails a lot but it is mostly automatic but may require some supervision
 I'd say about 75%+ accuracy
 Perception takes a long time (analysing the phone screen)
 Actual solving and taps are REALLY FUCKING fast
