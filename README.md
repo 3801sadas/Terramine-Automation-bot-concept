@@ -1,7 +1,8 @@
 # (Working but incomplete) Terramine automated Gold Mine minigame solver
 **This readme was made by AI as I am busy and actually have a life.**
 
-Still being worked on since of November 22, 2026
+Still being worked on as of November 26, 2026
+Still somewhat working as of November 26, 2026
 
 ## What is TerraMine?
 "Stake a Claim.
