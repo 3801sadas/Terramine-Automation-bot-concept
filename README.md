@@ -2,6 +2,7 @@
 **This readme was made by AI as I am busy and actually have a life.**
 
 Still being worked on as of November 26, 2026
+
 Still somewhat working as of November 26, 2026
 
 ## What is TerraMine?
